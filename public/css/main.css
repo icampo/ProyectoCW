@@ -1,0 +1,85 @@
+#cabecera{
+    background-color: white;
+    color: #1f648b;
+}
+.navbar{
+    margin-bottom:0px;
+
+}
+#navegacion{
+
+}
+#inicio{
+    background-image:url("/img/mano.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 570px;
+}
+#descripcion{
+    margin-top: 200px;
+    color: white;
+    font-family: sans-serif;
+    text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px 1px 0 black,
+            1px 1px 0 black;
+}
+#espacio{
+    background-color: #white;
+    min-height: 10px;
+    color: black;
+    font-family: sans-serif;
+}
+
+#formulario{
+    margin-top: 75px;
+
+}
+
+#contacto{
+    background-image:url("/img/footer.jpg");
+    min-height: 520px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.social {
+    -webkit-transform: scale(0.8);
+
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+}
+
+/*
+    Multicoloured Hover Variations
+*/
+
+#social-fb:hover {
+    color: #3B5998;
+}
+#social-tw:hover {
+    color: #4099FF;
+}
+#social-gp:hover {
+    color: #d34836;
+}
+#social-em:hover {
+    color: #f39c12;
+}
+
+#textoFooter {
+    margin-top: 20px;
+}
