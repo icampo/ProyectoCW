@@ -30,9 +30,12 @@ class HomeController extends Controller
 
     public function send(Request $request){
 
-        $name=$request->usermame;
+        $name=$request->mame;
         $email=$request->email;
         $message=$request->message;
+        $Comment=new Comment($name,$email,$message);
+
+        $this->insertOnDB($Comment);
 
         $request->validate([
         'name' => 'required|min:2',
@@ -41,9 +44,16 @@ class HomeController extends Controller
 
         ]);
 
-        $Comment=new Comment ($name,$message,$email);
-
         return redirect('/');
+
+    }
+
+    private function insertOnDB(Comment $comment){
+        DB::table("comments")->insert([
+           "name"=>$comment->getName(),
+           "email"=>$comment->getEmail(),
+           "message"=>$comment->getMessage()
+        ]);
 
     }
 
