@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Comment;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -30,7 +32,7 @@ class HomeController extends Controller
 
     public function send(Request $request){
 
-        $name=$request->mame;
+        $name=$request->name;
         $email=$request->email;
         $message=$request->message;
         $Comment=new Comment($name,$email,$message);
