@@ -6,9 +6,7 @@
     margin-bottom:0px;
 
 }
-#navegacion{
 
-}
 #inicio{
     background-image:url("/img/mano.jpg");
     background-attachment: fixed;
@@ -17,6 +15,7 @@
     background-repeat: no-repeat;
     height: 570px;
 }
+
 #descripcion{
     margin-top: 200px;
     color: white;
@@ -83,3 +82,17 @@
 #textoFooter {
     margin-top: 20px;
 }
+
+section {
+    padding: 100px 0; }
+section h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px; }
+section h3.section-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
