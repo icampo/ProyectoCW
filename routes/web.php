@@ -17,5 +17,4 @@ Route::get('/', function () {
 
 Auth::routes();
 
-
 Route::post("/contact","HomeController@send");

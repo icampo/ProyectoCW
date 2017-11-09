@@ -32,6 +32,13 @@ class HomeController extends Controller
 
     public function send(Request $request){
 
+        $request->validate([
+            'name' => 'required|min:2',
+            'email' => 'required|email|unique:users',
+            'message' => 'required|min:4',
+
+        ]);
+
         $name=$request->name;
         $email=$request->email;
         $message=$request->message;
@@ -39,12 +46,7 @@ class HomeController extends Controller
 
         $this->insertOnDB($Comment);
 
-        $request->validate([
-        'name' => 'required|min:2',
-        'email' => 'required|email|unique:users',
-        'message' => 'required|min:4',
 
-        ]);
 
         return redirect('/');
 
