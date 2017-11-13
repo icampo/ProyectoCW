@@ -27,7 +27,7 @@ class HomeController extends Controller
 
     public function index()
     {
-        return view('home');
+        return view('pages.home');
     }
 
     public function send(Request $request){
@@ -45,8 +45,6 @@ class HomeController extends Controller
         $Comment=new Comment($name,$email,$message);
 
         $this->insertOnDB($Comment);
-
-
 
         return redirect('/');
 

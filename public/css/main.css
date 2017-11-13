@@ -96,3 +96,9 @@ section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+#animado img{
+    display: block;
+    width: 55%;
+    margin: auto;
+}
