@@ -1,6 +1,11 @@
+@font-face {
+    font-family: amd;
+    src: url('/fonts/amd.otf');
+}
+
 #cabecera{
     background-color: white;
-    color: #1f648b;
+    color: #3297d1;
 }
 .navbar{
     margin-bottom:0px;
@@ -18,8 +23,9 @@
 
 #descripcion{
     margin-top: 200px;
+    font-size: 35px;
     color: white;
-    font-family: sans-serif;
+    font-family: Klavika Medium;
     text-shadow:
             -1px -1px 0 black,
             1px -1px 0 black,
@@ -84,7 +90,7 @@
 }
 
 section {
-    padding: 100px 0; }
+    padding: 50px 0; }
 section h2.section-heading {
     font-size: 40px;
     margin-top: 0;
@@ -99,9 +105,21 @@ section h3.section-subheading {
 
 #animado{
     text-align: center;
+    min-height: 465px;
 }
 #animado img{
     display: block;
-    width: 48%;
+    width: 50%;
     margin: auto;
 }
+
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #3297d1 !important;
+    white-space: nowrap;
+}
+

@@ -10,7 +10,7 @@
             </div>
         @endif
 
-        <img src="/img/construccion.gif">
+        <img src="/img/construccion1.gif">
 
     </div>
 
