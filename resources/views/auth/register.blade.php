@@ -1,7 +1,8 @@
 @extends('layouts.default')
 
 @section('content')
-<div class="container">
+<div id="intro">
+<div class="container" id="registro">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
@@ -75,3 +76,4 @@
     </div>
 </div>
 @endsection
+</div>

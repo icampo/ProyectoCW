@@ -1,4 +1,5 @@
-<div class="navbar-header">
+<nav class="navbar navbar-default">
+        <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -10,7 +11,7 @@
 </div>
 <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav">
-        <li class="active"><a href="{{ route('inicio') }}">Inicio</a></li>
+        <li><a href="{{ route('inicio') }}">Inicio</a></li>
         @if(Request::url() == route("inicio"))
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#contacto">Contacto</a></li>
@@ -38,6 +39,8 @@
 
                     <ul class="dropdown-menu">
 
+                        <li><a href="#">Perfil</a></li>
+
                         <li>
                             <a href="{{ route('logout') }}"
                                onclick="event.preventDefault();
@@ -49,6 +52,7 @@
                                 {{ csrf_field() }}
                             </form>
                         </li>
+
                     </ul>
                 </li>
                 @endguest
@@ -56,6 +60,3 @@
 </div>
 </div>
 </nav>
-
-</div>
-</div>

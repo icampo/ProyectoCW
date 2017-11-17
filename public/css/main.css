@@ -103,14 +103,21 @@ section h3.section-subheading {
     text-transform: none;
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
-#animado{
+#textoConst{
     text-align: center;
-    min-height: 465px;
+    min-height: 50px;
+}
+
+#animado{
+    min-height: 328px;
 }
 #animado img{
     display: block;
-    width: 50%;
+    align-content: center;
     margin: auto;
+    width:400px;
+    height:300px;
+
 }
 
 .dropdown-menu > li > a {
@@ -123,3 +130,29 @@ section h3.section-subheading {
     white-space: nowrap;
 }
 
+#registro{
+    min-height: 386px;
+    margin-top: 20px;
+}
+
+#logeo{
+
+    min-height: 386px;
+    margin-top: 20px;
+}
+
+#intro{
+    background-position: center;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #3297d1;
+
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+#outro{
+    text-align: center;
+}
