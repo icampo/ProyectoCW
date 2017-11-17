@@ -34,7 +34,7 @@ class HomeController extends Controller
 
         $request->validate([
             'name' => 'required|min:2',
-            'email' => 'required|email|unique:users',
+            'email' => 'required|email',
             'message' => 'required|min:4',
 
         ]);

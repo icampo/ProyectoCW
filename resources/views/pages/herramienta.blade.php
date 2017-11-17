@@ -18,6 +18,8 @@
 
     <script type="text/javascript">
 
+        let musica = new Audio("/img/ds.ogg");
+
         function PulsarTecla(event){
 
             tecla = event.code;
@@ -27,7 +29,9 @@
                 img = document.getElementById("animado");
                 imagen = '<img src="/img/ee.gif" alt="imagen" />';
                 img.innerHTML=imagen;
-
+                epi='url("/img/epi.gif")';
+                document.body.style.backgroundImage=epi;
+                musica.play();
 
             }
 
@@ -43,6 +47,9 @@
                 img = document.getElementById("animado");
                 imagen = '<img src="/img/construccion1.gif" alt="imagen" />';
                 img.innerHTML=imagen;
+                document.body.style.backgroundColor="white";
+                document.body.style.backgroundImage=null;
+                musica.pause();
             }
         };
 
