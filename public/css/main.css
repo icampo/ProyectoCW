@@ -3,6 +3,24 @@
     src: url('/fonts/amd.otf');
 }
 
+@font-face {
+    font-family: CaviarDreams;
+    src: url('/fonts/CaviarDreams.ttf');
+}
+
+.dropdown-menu{
+    font-family: CaviarDreams;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#myNavbar{
+    font-family: CaviarDreams;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
 #cabecera{
     background-color: white;
     color: #3297d1;
